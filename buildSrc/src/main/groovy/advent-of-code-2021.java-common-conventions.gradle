@@ -6,13 +6,23 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = '17'
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
 
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
 }
 
 tasks.named('test') {
-    useJunitPlatform()
+    useJUnitPlatform()
 }
 
