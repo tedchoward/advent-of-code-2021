@@ -8,5 +8,5 @@
  */
 
 rootProject.name = 'advent-of-code-2021'
-include('dec01','dec02','dec03')
+include('dec01','dec02','dec03', 'dec04')
 
