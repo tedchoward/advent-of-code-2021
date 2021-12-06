@@ -1,14 +1,13 @@
 package com.tedchoward.aoc2021.dec06;
 
-import lombok.val;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import lombok.val;
+import org.junit.jupiter.api.Test;
 
 public class FishCounterTest {
 
