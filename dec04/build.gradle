@@ -3,13 +3,6 @@ plugins {
 }
 
 repositories {
-//    maven {
-//        url "s3://maven.tedchoward.com/release"
-//        credentials(AwsCredentials) {
-//            accessKey AWS_ACCESS_KEY_ID
-//            secretKey AWS_SECRET_ACCESS_KEY
-//        }
-//    }
     mavenLocal()
 }
 
