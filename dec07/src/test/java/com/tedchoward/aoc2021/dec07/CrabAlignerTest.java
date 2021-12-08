@@ -30,4 +30,24 @@ public class CrabAlignerTest {
         val result = crabAligner.calculateOptimumAlignemnt(parsedInput);
         assertEquals(37, result);
     }
+
+    @Test
+    public void calculateActualOptimumAlignemntTest() {
+        val inputStr = "16,1,2,0,4,2,7,1,2,14";
+        val parsedInput = Arrays.stream(inputStr.split(",")).map(Integer::parseInt).toList();
+
+        val crabAligner = new CrabAligner();
+        val result = crabAligner.calculateActualOptimumAlignment(parsedInput);
+        assertEquals(168, result);
+    }
+
+    @Test
+    public void testPuzzle2() throws IOException {
+        val inputStr = Files.readString(Paths.get("src/test/resources", "input.txt"));
+        val parsedInput = Arrays.stream(inputStr.split(",")).map(Integer::parseInt).toList();
+
+        val crabAligner = new CrabAligner();
+        val result = crabAligner.calculateActualOptimumAlignment(parsedInput);
+        assertEquals(98368490, result);
+    }
 }
