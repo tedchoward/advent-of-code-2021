@@ -28,7 +28,7 @@ public class CrabAlignerTest {
 
         val crabAligner = new CrabAligner();
         val result = crabAligner.calculateOptimumAlignemnt(parsedInput);
-        assertEquals(37, result);
+        assertEquals(355150, result);
     }
 
     @Test
